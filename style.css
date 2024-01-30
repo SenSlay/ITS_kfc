@@ -1,0 +1,503 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --kfc-red-color: #e4002b;
+    --bg-light-grey: rgb(243, 243, 243);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.primary-color {
+    color: var(--kfc-red-color);
+}
+
+/* Header Styles */
+header {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.active-link {
+    color: var(--kfc-red-color);
+    border-bottom: 2px solid var(--kfc-red-color);
+}
+
+.active-link:hover {
+    color: var(--kfc-red-color);
+}
+
+li a.nav-link:hover {
+    border-bottom: 2px solid var(--kfc-red-color);
+}
+
+/* Add gap when screen dimension is 992px or more*/
+@media (min-width: 992px) {
+    .g-lg-20 {
+        gap: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+    .collapse-md-show {
+        display: block!important;
+    }
+
+    .collapse-flex-md-show {
+        display: flex!important;
+    }
+}
+
+/* Main Styles */
+.home-banner {
+    background-image: url(images/index/kfc-banner.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+}
+
+.home-section-headers {
+    margin-bottom: 40px;
+    text-underline-offset: 15px;
+    text-decoration: underline var(--kfc-red-color);
+}
+
+#menu, #testimonials {
+    background-color: var(--bg-light-grey)
+}
+
+main a {
+    text-decoration: none;
+}
+
+section p {
+    margin-bottom: 40px;
+    line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+    .d-xs-none {
+        display: none!important;
+    }
+}
+
+.input-required {
+    color: red;
+}
+
+/* Footer styles */
+footer {
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.collapse-header{
+    font-weight: 700;
+    font-size: 22px
+}
+
+.footer-links {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer li {
+    text-align: center;
+}
+
+footer .footer-links a:hover {
+    color: var(--kfc-red-color);
+}
+
+footer li {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 768px) {
+    .disabled-md {
+        pointer-events: none;
+    }
+}
+
+#developers li {
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    flex: 1;
+}
+
+/* Anya Styles */
+
+table, td {
+    padding: 5px;
+}
+
+h2.pageTitle{
+    text-align: center;
+    color: white;
+    text-shadow: 0px 3px black;
+    background-color: #C41230;
+    font-size: xx-large;
+}
+
+/* style for menu */
+.wMenu {
+    margin-left: 3%; 
+    margin-right: 3%;
+}
+
+.iMenu{
+    background-color: #C41230;
+    border-radius: 10px;
+    padding: 6px;
+}
+
+.nMenu {
+    color: white;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.mi-pic{
+    width: 200px;
+    padding: 5px;
+    margin-left: 10%;
+}
+
+.nav-icons{
+    height:75px;
+    width: auto;
+}
+
+#navbar{
+    display: block;
+}
+
+.menu-nav-bar{
+    margin: auto;
+    width: 50%;
+}
+
+td{
+    text-align: center;
+    
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    height: 20%;
+    width: auto;
+  }
+  
+.qNav {
+    background-color: white;
+    overflow: hidden;
+    width: 100%;
+    margin-top: 7%;
+    padding-top: 10px;
+}
+
+.sticky + .content {
+    padding-top: 140px
+  }
+
+.content {
+    margin-top: 30px;
+  }
+
+.menu-item {
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* style for testimonials */
+h4.RecDisKFC{
+    color: whitesmoke;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+.reviewType{
+    background-color: #C41230;
+    padding: 7px;
+    border-radius: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rev-Box {
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.rev-Box-text{
+    background-color: rgba(129, 133, 137, 0.3);
+    border-radius: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+    padding: 10px;
+    text-align: justify;
+}
+
+table.inner-rBox{
+    width: 100%;
+    margin: auto;
+}
+
+td.inner-rBox{
+    text-align: left;
+}
+
+span {
+    background-color: #C41230;
+    color: rgb(251, 184, 37);
+    border-radius: 10px;
+    padding: 4px;
+    font-size: 10px;
+}
+
+img.prof-pic{
+    width: 50px;
+    height: auto;
+    margin-left: 41%;
+    margin-right: auto;
+}
+
+.btn{
+    background-color: #e4002b;
+    border-color: #e4002b;
+}
+
+/* Sofia Styles */
+
+.red-text {
+    color: red;
+  }
+  .image-container {
+    border: 2px solid #000; /* Adjust the border properties as needed */
+    padding: 10px; /* Adjust the padding as needed */
+    text-align: right; /* Align the image to the right side */
+  }
+  
+  .img-fluid {
+    max-width: 90%; /* Ensure the image is responsive */
+  }
+
+  .text-container {
+    font-size: 18px; /* Adjust the font size as needed */
+  }
+  
+  .text-container p {
+    margin-bottom: 19px; /* Adjust the margin between paragraphs if needed */
+  }
+  
+
+  .text-container {
+    text-align: justify;
+    text-justify: inter-word;
+    max-width: 900px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 10px; /* Adjust the overall padding */
+  }
+  
+  .text-container p {
+    padding-bottom: 8px; /* Adjust the padding between paragraphs */
+  }
+  
+  .myDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px outset red;
+    background-color: rgb(172, 26, 26);
+    text-align: center;
+    padding: 15px;
+    margin: 20px;
+    color: white;
+  }
+
+  .myDiv h2, .myDiv p {
+    flex: 0 0 48%; /* Adjust the width of each item as needed */
+    margin: 5px; /* Add margin between items */
+  }
+  
+  /* For contact us page*/
+
+  main {
+    padding: 20px; /* Optional: Add padding for better spacing */
+  }
+  
+  .customer-feedback-heading {
+    font-size: 2em; /* Adjust the font size as needed */
+    font-family: Tahoma, Geneva, sans-serif; /* Tahoma as the first choice, fallbacks included */
+    color: red;
+    text-align: left;
+  }
+  main {
+    padding: 20px; /* Optional: Add padding for better spacing */
+  }
+  
+  .text {
+    text-align: left;
+    margin-left: 20px; /* Add left margin for space */
+  }
+  
+  /*FORMS*/
+/* Additional styling for the form elements within .form-container */
+
+
+
+.form-container {
+    background-color: #a11616;
+    padding: 20px 10%;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #a11616; /* Add a border to the form container */
+    margin-top: 20px; /* Add margin at the bottom for the line break */
+  }
+  
+  .form-container form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .form-container label {
+    color: white; /* Set the label text color to white */
+  }
+  
+  .form-container input,
+  .form-container textarea,
+  .form-container select {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .form-container input[type="submit"] {
+    background-color: #ff1b1b;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background-color: #ff1b1b;
+  }
+  
+  /* Additional styling for the form elements within .form-container */
+
+/* Oneil Styles */
+
+/* table designs */
+.tOpport {
+    padding: 5%;
+    overflow-x:auto;
+}
+
+.restOpport {
+    background-color: whitesmoke;
+}
+
+.supOpport {
+    background-color: whitesmoke;
+}
+
+.table-name-text {
+    text-decoration-line: underline;
+    text-decoration-color: var(--kfc-red-color);
+    color:var(--kfc-red-color);
+}
+
+/* button style */
+.ANbutton {
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: var(--kfc-red-color);
+}
+
+.cellpad {
+    padding: 2%;
+}
+
+.formsDesign {
+    background-color: rgb(155, 154, 154);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+}
+
+h3.form-title{
+    color: white;
+}
+
+span.form-title{
+    color: var(--kfc-red-color);
+}
+
+.form-button{
+    background-color: #e4002b;
+    border-color: #e4002b;
+}
+
+.form-bg-img{
+    background-image: url(formBGimg.png);
+    padding: 20px;
+}
+
+.signin-button{
+    background-color:#e68d2f;
+    border-color: #e68d2f;
+}
+
+span.signin-title{
+    text-decoration-line: underline;
+    text-decoration-color: #e4002b;
+}
+
+.signin-bgstyle {
+    background-image: url(signinbgimgred.png);
+    padding: 30px;
+}
+
+.formsDesignsignin {
+    background-color: rgb(47, 105, 47);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    padding: 20px;
+}
+
+
+
+
+
